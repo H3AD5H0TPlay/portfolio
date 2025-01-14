@@ -243,23 +243,23 @@ span {
 @keyframes words {
     0%,
     20% {
-        content: "Frontend Designer";
+        content: "Frontend fejlesztő";
     }
     21%,
     40% {
-        content: "Web Designer";
+        content: "Backend fejlesztő";
     }
     41%,
     60% {
-        content: "UI / UX Designer";
+        content: "Fullstack fejlesztő";
     }
     61%,
     80% {
-        content: "Web Developer";
+        content: "Szoftverfejlesztő";
     }
     81%,
     100% {
-        content: "Software Tester";
+        content: "Egyetemista";
     }
 }
 
@@ -748,5 +748,9 @@ span {
 
     .services-container {
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .heading {
+        font-size: 5rem;
     }
 }
