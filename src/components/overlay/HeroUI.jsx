@@ -18,22 +18,19 @@ export default function HeroUI() {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center pointer-events-none">
-      <div className="glass p-8 rounded-2xl text-center max-w-2xl mx-4 relative overflow-hidden pointer-events-auto">
-        {/* Glow effect behind text */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/20 blur-3xl -z-10"></div>
-        
-        <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
-          Péter <span className="text-primary">Varga</span>
+      <div className="p-8 text-center max-w-4xl mx-4 relative pointer-events-auto mix-blend-difference z-10">
+        <h1 ref={titleRef} className="text-6xl md:text-8xl font-black mb-4 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
+          Péter <span className="text-primary mix-blend-screen">Varga</span>
         </h1>
-        <h2 ref={subtitleRef} className="text-xl md:text-2xl text-gray-300 font-light">
-          Software Information Technology Developer
+        <h2 ref={subtitleRef} className="text-xl md:text-3xl text-gray-300 font-light tracking-widest uppercase">
+          Creative WebGL Developer
         </h2>
-        <div className="mt-8 flex gap-4 justify-center">
-          <a href="#projects" className="px-6 py-3 rounded-full bg-primary/10 border border-primary text-primary hover:bg-primary hover:text-dark-900 transition-all font-medium pointer-events-auto">
-            View Work
+        <div className="mt-12 flex gap-6 justify-center">
+          <a href="#projects" className="px-8 py-4 rounded-none border border-primary/50 text-primary hover:bg-primary hover:text-dark-900 transition-all font-mono tracking-widest pointer-events-auto backdrop-blur-sm">
+            [ VIEW_WORK ]
           </a>
-          <a href="#contact" className="px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-all font-medium pointer-events-auto">
-            Contact Me
+          <a href="#contact" className="px-8 py-4 rounded-none border border-white/20 text-white hover:bg-white/10 transition-all font-mono tracking-widest pointer-events-auto backdrop-blur-sm">
+            [ CONTACT ]
           </a>
         </div>
       </div>
