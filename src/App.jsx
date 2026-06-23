@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
+import Scene from './components/canvas/Scene'
 import HeroUI from './components/overlay/HeroUI'
 import ProjectsUI from './components/overlay/ProjectsUI'
 import ContactUI from './components/overlay/ContactUI'
@@ -14,12 +15,7 @@ export default function App() {
       {/* BULLETPROOF WRAPPER */}
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1, backgroundColor: '#111' }}>
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
-          {/* THE "DUMB" SCENE */}
-          <ambientLight intensity={1} />
-          <mesh>
-            <boxGeometry args={[2, 2, 2]} />
-            <meshStandardMaterial color="red" />
-          </mesh>
+          <Scene />
         </Canvas>
       </div>
 
