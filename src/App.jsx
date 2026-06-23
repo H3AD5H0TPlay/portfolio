@@ -1,31 +1,30 @@
 import { useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Scene from './components/canvas/Scene'
 import HeroUI from './components/overlay/HeroUI'
 import ProjectsUI from './components/overlay/ProjectsUI'
 import ContactUI from './components/overlay/ContactUI'
 import SkillsUI from './components/overlay/SkillsUI'
 
-gsap.registerPlugin(ScrollTrigger)
-
 export default function App() {
   const container = useRef(null)
 
   return (
-    <div ref={container} className="relative w-full overflow-x-hidden">
+    <div ref={container} style={{ position: 'relative', width: '100%', overflowX: 'hidden' }}>
       
-      {/* 3D Canvas Background */}
-      {/* Strict fixed dimensions ensuring full viewport coverage behind UI */}
-      <div className="fixed inset-0 z-0 w-full h-full pointer-events-none bg-dark-900">
+      {/* BULLETPROOF WRAPPER */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1, backgroundColor: '#111' }}>
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
-          <Scene />
+          {/* THE "DUMB" SCENE */}
+          <ambientLight intensity={1} />
+          <mesh>
+            <boxGeometry args={[2, 2, 2]} />
+            <meshStandardMaterial color="red" />
+          </mesh>
         </Canvas>
       </div>
 
-      {/* HTML Overlays Layered on top (z-10) */}
-      <div className="relative z-10 w-full flex flex-col pointer-events-none">
+      {/* HTML Overlays Layered on top */}
+      <div style={{ position: 'relative', zIndex: 10, width: '100%', display: 'flex', flexDirection: 'column', pointerEvents: 'none' }}>
         <section id="hero" className="w-full h-screen pointer-events-auto">
           <HeroUI />
         </section>
