@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect } from 'react'
+import { useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -10,21 +10,22 @@ import SkillsUI from './components/overlay/SkillsUI'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function App() {
+export default function App() {
   const container = useRef(null)
 
   return (
     <div ref={container} className="relative w-full overflow-x-hidden">
+      
       {/* 3D Canvas Background */}
-      <div className="fixed top-0 left-0 w-full h-screen z-0 pointer-events-none bg-dark-900">
+      {/* Strict fixed dimensions ensuring full viewport coverage behind UI */}
+      <div className="fixed inset-0 z-0 w-full h-full pointer-events-none bg-dark-900">
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
           <Scene />
         </Canvas>
       </div>
 
-      {/* HTML Overlays */}
+      {/* HTML Overlays Layered on top (z-10) */}
       <div className="relative z-10 w-full flex flex-col pointer-events-none">
-        {/* We re-enable pointer events inside individual UI components where interaction is needed */}
         <section id="hero" className="w-full h-screen pointer-events-auto">
           <HeroUI />
         </section>
@@ -41,8 +42,7 @@ function App() {
           <ContactUI />
         </section>
       </div>
+      
     </div>
   )
 }
-
-export default App

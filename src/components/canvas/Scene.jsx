@@ -30,34 +30,10 @@ export default function Scene() {
       }
     })
 
-    // 1. Zoom into abstract geometry / move to projects
-    tl.to(camera.position, {
-      z: 2,
-      y: -5,
-      ease: "power1.inOut"
-    }, 0)
-    
-    // 2. Move through projects section (y from -5 to -15)
-    tl.to(camera.position, {
-      y: -20,
-      z: 3,
-      ease: "power1.inOut"
-    }, "<+=0.5")
-
-    // 3. Move to skills section
-    tl.to(camera.position, {
-      y: -30,
-      z: 5,
-      ease: "power1.inOut"
-    }, ">")
-
-    // 4. Move to contact
-    tl.to(camera.position, {
-      y: -40,
-      z: 8,
-      rotationX: 0.2,
-      ease: "power1.inOut"
-    }, ">")
+    tl.to(camera.position, { z: 2, y: -5, ease: "power1.inOut" }, 0)
+    tl.to(camera.position, { y: -20, z: 3, ease: "power1.inOut" }, "<+=0.5")
+    tl.to(camera.position, { y: -30, z: 5, ease: "power1.inOut" }, ">")
+    tl.to(camera.position, { y: -40, z: 8, rotationX: 0.2, ease: "power1.inOut" }, ">")
 
     return () => tl.kill()
   }, [camera])
@@ -65,13 +41,14 @@ export default function Scene() {
   return (
     <>
       <group ref={sceneGroup}>
-        <ambientLight intensity={0.1} />
-        <directionalLight position={[10, 10, 5]} intensity={2} color="#a855f7" />
+        {/* Corrected Lighting Setup */}
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[10, 10, 5]} intensity={2} color="#ffffff" />
         <directionalLight position={[-10, -10, -5]} intensity={1} color="#0ea5e9" />
         <pointLight position={[0, 0, 0]} intensity={3} color="#0ea5e9" distance={10} />
         
         {/* Volumetric Fog */}
-        <fog attach="fog" args={['#020202', 2, 20]} />
+        <fog attach="fog" args={['#050505', 2, 20]} />
 
         {/* Hero Section Elements (y = 0) */}
         <Particles />
@@ -93,16 +70,8 @@ export default function Scene() {
 
       {/* Post Processing Pipeline */}
       <EffectComposer disableNormalPass multisampling={4}>
-        <Bloom 
-          luminanceThreshold={0.2} 
-          luminanceSmoothing={0.9} 
-          height={300}
-          intensity={1.5}
-        />
-        <ChromaticAberration
-          blendFunction={BlendFunction.NORMAL}
-          offset={new THREE.Vector2(0.002, 0.002)}
-        />
+        <Bloom luminanceThreshold={0.2} luminanceSmoothing={0.9} intensity={1.5} />
+        <ChromaticAberration blendFunction={BlendFunction.NORMAL} offset={new THREE.Vector2(0.002, 0.002)} />
         <Noise premultiply blendFunction={BlendFunction.ADD} opacity={0.3} />
       </EffectComposer>
     </>
