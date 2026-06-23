@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Mail, Globe, Briefcase } from 'lucide-react'
 
 export default function ContactUI() {
   return (
@@ -37,10 +37,10 @@ export default function ContactUI() {
 
         <div className="mt-8 pt-6 border-t border-white/10 flex justify-center gap-6">
           <a href="https://github.com/H3AD5H0TPlay" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all">
-            <Github size={24} />
+            <Globe size={24} />
           </a>
           <a href="https://linkedin.com/in/varpeter" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-[#0ea5e9] hover:-translate-y-1 transition-all">
-            <Linkedin size={24} />
+            <Briefcase size={24} />
           </a>
           <a href="mailto:vargapeter.workmail@gmail.com" className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all">
             <Mail size={24} />
