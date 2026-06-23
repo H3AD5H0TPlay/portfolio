@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Scene from './components/canvas/Scene'
 import HeroUI from './components/overlay/HeroUI'
@@ -15,7 +15,9 @@ export default function App() {
       {/* BULLETPROOF WRAPPER */}
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1, backgroundColor: '#111' }}>
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
-          <Scene />
+          <Suspense fallback={null}>
+            <Scene />
+          </Suspense>
         </Canvas>
       </div>
 

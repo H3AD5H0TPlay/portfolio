@@ -23,7 +23,6 @@ function SkillText({ position, text, color = "#ffffff", fontSize = 0.5, isTermin
       position={position}
       fontSize={fontSize}
       color={color}
-      font={isTerminal ? "https://fonts.gstatic.com/s/firamono/v14/N0bX2SlFPv1weGeLZDtgJv7S.woff" : undefined}
     >
       {displayString}
     </Text>
