@@ -14,9 +14,9 @@ function App() {
   const container = useRef(null)
 
   return (
-    <div ref={container} className="relative w-full h-screen overflow-y-auto overflow-x-hidden">
+    <div ref={container} className="relative w-full overflow-x-hidden">
       {/* 3D Canvas Background */}
-      <div className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none">
+      <div className="fixed top-0 left-0 w-full h-screen z-0 pointer-events-none bg-dark-900">
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
           <Scene />
         </Canvas>

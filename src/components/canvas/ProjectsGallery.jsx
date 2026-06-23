@@ -38,7 +38,6 @@ function ProjectCard({ position, rotation, title, description, url }) {
           fontSize={0.3}
           color="#a855f7"
           anchorX="left"
-          font="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2"
         >
           {title}
         </Text>
@@ -48,8 +47,6 @@ function ProjectCard({ position, rotation, title, description, url }) {
           fontSize={0.15}
           color="#ffffff"
           anchorX="left"
-          maxWidth={3.4}
-          font="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2"
         >
           {description}
         </Text>

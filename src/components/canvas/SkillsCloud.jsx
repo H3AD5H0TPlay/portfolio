@@ -21,7 +21,6 @@ function SkillText({ position, text, color = "#ffffff", fontSize = 0.5 }) {
       position={position}
       fontSize={fontSize}
       color={color}
-      font="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2"
     >
       {text}
     </Text>
