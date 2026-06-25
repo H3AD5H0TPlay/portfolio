@@ -34,7 +34,7 @@ export default function Hero() {
 
       {/* Description */}
       <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed px-4">
-        I specialize in architecting scalable backend infrastructure and developing secure, high-performance APIs. I have a deep-rooted passion for implementing rigorous security protocols and advanced cryptography to safeguard sensitive data.
+        I am a versatile full-stack developer, crafting everything from responsive frontends to robust backend systems. Beyond standard web development, I am deeply passionate about building my own indie games, custom software solutions, and interactive language learning applications.
       </p>
 
       {/* Location Badge */}
