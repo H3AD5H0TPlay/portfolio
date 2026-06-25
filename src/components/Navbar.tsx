@@ -62,6 +62,8 @@ export default function Navbar() {
               <Link
                 key={item.id}
                 to={`/${activeLang.toLowerCase()}/${item.id}`}
+                target="_blank"
+                rel="noreferrer"
                 className="relative px-4 py-2 text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-300 rounded-full hover:bg-gray-100/50 dark:hover:bg-white/5"
               >
                 {item.label}
