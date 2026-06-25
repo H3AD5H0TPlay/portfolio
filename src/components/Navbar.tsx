@@ -1,11 +1,27 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useNavigate, useParams } from 'react-router-dom';
 
-const navItems = ['My Story', 'Resume', 'Projects', 'Contact', 'CV'];
 const languages = ['EN', 'HU', 'DE', 'JP', 'KR'];
 
 export default function Navbar() {
-  const [activeLang, setActiveLang] = useState('EN');
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { lang } = useParams();
+  
+  const activeLang = lang?.toUpperCase() || 'EN';
+
+  const navItems = [
+    { id: 'my-story', label: t('nav.myStory') },
+    { id: 'resume', label: t('nav.resume') },
+    { id: 'projects', label: t('nav.projects') },
+    { id: 'contact', label: t('nav.contact') }
+  ];
+
+  const handleLanguageChange = (selectedLang: string) => {
+    navigate(`/${selectedLang.toLowerCase()}`);
+  };
 
   // Add a nice shadow and blur when scrolling down
   useEffect(() => {
@@ -40,37 +56,34 @@ export default function Navbar() {
 
         {/* Center: Navigation Links */}
         <div className="hidden md:flex items-center space-x-1">
-          {navItems.map((item) => {
-            const id = item.toLowerCase().replace(' ', '-');
-            return (
-              <a 
-                key={item} 
-                href={`#${id}`} 
-                className="relative px-4 py-2 text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-300 rounded-full hover:bg-gray-100/50 dark:hover:bg-white/5"
-              >
-                {item}
-              </a>
-            );
-          })}
+          {navItems.map((item) => (
+            <a 
+              key={item.id} 
+              href={`#${item.id}`} 
+              className="relative px-4 py-2 text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-300 rounded-full hover:bg-gray-100/50 dark:hover:bg-white/5"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
 
         {/* Right: Language Selector */}
         <div className="flex items-center space-x-1 bg-gray-100/50 dark:bg-white/5 p-1 rounded-xl border border-gray-200/50 dark:border-white/10 backdrop-blur-sm">
-          {languages.map((lang) => (
+          {languages.map((l) => (
             <button 
-              key={lang}
-              onClick={() => setActiveLang(lang)}
+              key={l}
+              onClick={() => handleLanguageChange(l)}
               className={`relative px-3 py-1.5 text-xs font-bold rounded-lg transition-all duration-300 ${
-                activeLang === lang 
+                activeLang === l 
                   ? 'text-white shadow-md' 
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200/50 dark:hover:bg-white/10'
               }`}
             >
               {/* Active state background with gradient */}
-              {activeLang === lang && (
+              {activeLang === l && (
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg -z-10" />
               )}
-              {lang}
+              {l}
             </button>
           ))}
         </div>

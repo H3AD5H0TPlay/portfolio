@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="min-h-[85vh] w-full px-6 flex flex-col items-center justify-center text-center pt-10 pb-20">
       
@@ -19,19 +23,19 @@ export default function Hero() {
       
       {/* Title */}
       <h2 className="text-xl md:text-2xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 mb-8 uppercase">
-        Software Engineer
+        {t('hero.role')}
       </h2>
 
       {/* Quote */}
       <p className="text-lg md:text-xl font-medium italic text-gray-600 dark:text-gray-300 mb-6 max-w-xl relative">
         <span className="absolute -left-4 -top-2 text-4xl text-indigo-500/30">"</span>
-        Crafting robust digital foundations that stand the test of time.
+        {t('hero.quote')}
         <span className="absolute -right-4 -bottom-4 text-4xl text-purple-500/30">"</span>
       </p>
 
       {/* Description */}
       <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed px-4">
-        I am a versatile full-stack developer, crafting everything from responsive frontends to robust backend systems. Beyond standard web development, I am deeply passionate about building my own indie games, custom software solutions, and interactive language learning applications.
+        {t('hero.description')}
       </p>
 
       {/* Location Badge */}

@@ -1,49 +1,53 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Resume() {
+  const { t } = useTranslation();
+
   const education = [
     {
-      period: "2023/09 – 2026/06",
-      degree: "BSc in Computer Science",
-      institution: "University of Pécs (PTE-TTK), Pécs",
-      details: "Software Engineering Specialization. Thesis: The Hausdorff Metric and Fractals."
+      period: t('resume.edu1.period'),
+      degree: t('resume.edu1.degree'),
+      institution: t('resume.edu1.institution'),
+      details: t('resume.edu1.details')
     },
     {
-      period: "2022",
-      degree: "Category B Driving License",
-      institution: "Nagykanizsa",
-      details: "Successfully obtained my driving license."
+      period: t('resume.edu2.period'),
+      degree: t('resume.edu2.degree'),
+      institution: t('resume.edu2.institution'),
+      details: t('resume.edu2.details')
     },
     {
-      period: "2018 – 2022",
-      degree: "High School Diploma",
-      institution: "Dr. Mező Ferenc Gimnázium, Nagykanizsa",
-      details: "Graduated with absolute honors (straight A's)."
+      period: t('resume.edu3.period'),
+      degree: t('resume.edu3.degree'),
+      institution: t('resume.edu3.institution'),
+      details: t('resume.edu3.details')
     },
     {
-      period: "2020",
-      degree: "C1 Advanced English Exam",
-      institution: "Language Certification",
-      details: "Demonstrated advanced proficiency in the English language."
+      period: t('resume.edu4.period'),
+      degree: t('resume.edu4.degree'),
+      institution: t('resume.edu4.institution'),
+      details: t('resume.edu4.details')
     }
   ];
 
   const experience = [
     {
-      period: "2026/03 – Present",
-      role: "Volunteer",
-      company: "Robotika Pécs Foundation, Pécs",
-      details: "Maintenance of robotics hardware, wiring, and assembly of complex systems. Software configuration, testing, and troubleshooting of control scripts. Assisting at professional events and mentoring students."
+      period: t('resume.exp1.period'),
+      role: t('resume.exp1.role'),
+      company: t('resume.exp1.company'),
+      details: t('resume.exp1.details')
     },
     {
-      period: "2026/03 – 2026/04",
-      role: "IT Specialist",
-      company: "Charter Informatika Kft., Pécs",
-      details: "Hardware maintenance, network infrastructure deployment, and server/desktop configuration. Provided support for web and software development tasks."
+      period: t('resume.exp2.period'),
+      role: t('resume.exp2.role'),
+      company: t('resume.exp2.company'),
+      details: t('resume.exp2.details')
     },
     {
-      period: "2025/01 – 2025/05",
-      role: "Web Application Developer",
-      company: "Exaline Kft., Budapest",
-      details: "Developed a custom SEO auditing web app. Built a Python web scraper and Django backend logic. Designed and implemented an interactive React frontend."
+      period: t('resume.exp3.period'),
+      role: t('resume.exp3.role'),
+      company: t('resume.exp3.company'),
+      details: t('resume.exp3.details')
     }
   ];
 
@@ -55,7 +59,7 @@ export default function Resume() {
         <div className="flex items-center space-x-4 mb-16">
           <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
-            Resume
+            {t('resume.title')}
           </h2>
           <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
         </div>
@@ -70,7 +74,7 @@ export default function Resume() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Experience</h3>
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white">{t('resume.experience')}</h3>
             </div>
             
             <div className="space-y-10 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 dark:before:via-white/10 before:to-transparent">
@@ -96,7 +100,7 @@ export default function Resume() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Education</h3>
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white">{t('resume.education')}</h3>
             </div>
             
             <div className="space-y-10 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 dark:before:via-white/10 before:to-transparent">
@@ -119,7 +123,7 @@ export default function Resume() {
           <div className="flex items-center space-x-4 mb-16">
             <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
-              Tech Stack & Skills
+              {t('resume.stack')}
             </h3>
             <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
           </div>
@@ -128,7 +132,7 @@ export default function Resume() {
             
             {/* Backend & APIs */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Backend & APIs</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.backend')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['Node.js', 'Python (Django, Flask)', 'C#', 'Java', 'Clerk Auth', 'Stripe API', 'GitHub REST API'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
@@ -138,7 +142,7 @@ export default function Resume() {
 
             {/* Frontend & UI */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Frontend & UI</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.frontend')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML & CSS', 'Bootstrap'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
@@ -148,7 +152,7 @@ export default function Resume() {
 
             {/* Data & Storage */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Data & Storage</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.data')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['PostgreSQL', 'Supabase'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
@@ -158,7 +162,7 @@ export default function Resume() {
 
             {/* Mobile & Desktop Apps */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Mobile & Desktop</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.mobile')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['Android', 'Kotlin', 'Dart (Flutter)', 'Gradle', 'PC Apps', 'SDL2', 'Dear ImGui'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
@@ -168,7 +172,7 @@ export default function Resume() {
 
             {/* Platform & Delivery */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Platform & Delivery</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.platform')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['Linux (Debian, Arch)', 'Vercel (CI/CD)', 'PostHog', 'Networking Basics'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
@@ -178,7 +182,7 @@ export default function Resume() {
 
             {/* Additional Tech */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Additional Tech</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.additional')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['C/C++', 'NumPy, Pandas, SciPy', 'AI / LLM Engineering', 'Robotics Config'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
@@ -188,7 +192,7 @@ export default function Resume() {
 
             {/* Soft Skills */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Soft Skills</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.soft')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['Problem Solving', 'Analytical Thinking', 'Continuous Learning', 'Process Automation'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
@@ -198,7 +202,7 @@ export default function Resume() {
 
             {/* Spoken Languages */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Spoken Languages</h4>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">{t('resume.categories.spoken')}</h4>
               <div className="flex flex-wrap gap-2">
                 {['Hungarian (Native)', 'English (C1 Advanced)'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>

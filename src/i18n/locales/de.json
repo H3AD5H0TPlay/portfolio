@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "myStory": "Meine Geschichte",
+    "resume": "Lebenslauf",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "role": "Software-Ingenieur",
+    "quote": "Ich schaffe robuste digitale Fundamente, die den Test der Zeit bestehen.",
+    "description": "Ich bin ein vielseitiger Full-Stack-Entwickler, der alles von responsiven Frontends bis hin zu robusten Backend-Systemen entwickelt. Neben der Standard-Webentwicklung hege ich eine tiefe Leidenschaft für die Entwicklung meiner eigenen Indie-Spiele, maßgeschneiderter Softwarelösungen und interaktiver Anwendungen zum Sprachenlernen.",
+    "placeholder": "Platzhalter für Bild"
+  },
+  "story": {
+    "title": "Meine Geschichte",
+    "p1": "Ich bin in den ruhigen, friedlichen Vororten von Nagykanizsa geboren und aufgewachsen. Das Aufwachsen in solch einer ruhigen Umgebung vermittelte mir früh eine tiefe Wertschätzung für Ordnung und Struktur. Ich war ein Kind, das Trost in Regeln fand – wenn es ein System gab, hielt ich mich daran. Damals ahnte ich nicht, dass sich dieser angeborene Respekt vor Logik und strukturierten Systemen wunderbar in die Welt des Programmierens übertragen würde, wo Code der ultimative Ausdruck von Ordnung ist.",
+    "p2": "Meine Reise in die Programmierung begann in der 5. Klasse, angetrieben von einem einfachen Problem in einem Videospiel. Ich musste Permutationen von 1 bis 8 berechnen, ein mathematisches Konzept, das ich noch nicht einmal gelernt hatte. Mein Cousin schrieb ein kleines Python-Skript, das sofort alle Möglichkeiten in einer Datei generierte. Diesen Prozess zu sehen – einen Befehl einzugeben und zuzusehen, wie die Maschine mühelos ein komplexes Problem löst – war eine Offenbarung. Ich erkannte die tiefgreifende Macht von Software: <1>Man schreibt es auf, und es wird Realität.</1> Python wurde meine erste Sprache, und seitdem bin ich in die Entwicklung verliebt.",
+    "q1": "\"Man schreibt es auf, und es wird Realität.\"",
+    "p3": "Ich habe meine Leidenschaft formell an der Universität Pécs (PTE-TTK) verfolgt und dort einen Bachelor in Informatik mit Spezialisierung auf Software Engineering erworben. Mein akademischer Weg, der in meiner Abschlussarbeit über <1>\"Die Hausdorff-Metrik und Fraktale\"</1> gipfelte, hat meinen tiefen Respekt für strenge mathematische Formeln und Präzision weiter gestärkt. Bei meiner Arbeit glaube ich daran, dass jede Berechnung bis auf die letzte Dezimalstelle fehlerfrei sein muss.",
+    "p4": "Außerhalb der formellen akademischen Ausbildung ist meine Programmierung eng mit meinen Hobbys verwoben. Ich bin ein begeisterter Gamer und lerne leidenschaftlich gerne Sprachen. Diese Leidenschaften sind der Hauptantrieb für meine persönlichen Projekte. Ich programmiere, um meine eigenen Probleme zu lösen und mich selbst zu unterhalten – sei es durch die Entwicklung \"intelligenter Assistenten\" zur Berechnung von Spielwahrscheinlichkeiten, optimalen Routen und Teamzusammensetzungen oder durch die Entwicklung meiner eigenen interaktiven Sprachlern-Apps und Zen-Spiele.",
+    "q2": "\"Leistung durch Automatisierung maximieren: Der Benutzer liefert das Minimum, und die Maschine erledigt den Rest.\"",
+    "p5": "Meine wichtigste technische Philosophie ist einfach: Die Leistung durch Automatisierung zu maximieren. Ein Benutzer sollte das absolute Minimum beisteuern müssen, während die Maschine die schwere Arbeit übernimmt. Ich entwickle ethische, hilfreiche Tools, die Ordnung ins Chaos bringen und darauf ausgelegt sind, mein eigenes Leben sowie das Leben anderer zu erleichtern."
+  },
+  "resume": {
+    "title": "Lebenslauf",
+    "experience": "Berufserfahrung",
+    "education": "Ausbildung",
+    "stack": "Tech-Stack & Fähigkeiten",
+    "toBeAdded": "Demnächst...",
+    "categories": {
+      "backend": "Backend & APIs",
+      "frontend": "Frontend & UI",
+      "data": "Datenbanken & Speicherung",
+      "mobile": "Mobile & Desktop",
+      "platform": "Plattform & Bereitstellung",
+      "additional": "Zusätzliche Technologien",
+      "soft": "Soft Skills",
+      "spoken": "Gesprochene Sprachen"
+    },
+    "exp1": {
+      "period": "2026/03 – Heute",
+      "role": "Ehrenamtlicher",
+      "company": "Robotika Pécs Stiftung, Pécs",
+      "details": "Wartung von Robotik-Hardware, Verkabelung und Montage komplexer Systeme. Softwarekonfiguration, Tests und Fehlersuche von Steuerungsskripten. Unterstützung bei Fachveranstaltungen und Mentoring von Studenten."
+    },
+    "exp2": {
+      "period": "2026/03 – 2026/04",
+      "role": "IT-Spezialist",
+      "company": "Charter Informatika Kft., Pécs",
+      "details": "Hardware-Wartung, Bereitstellung von Netzwerkinfrastruktur sowie Server-/Desktop-Konfiguration in Unternehmensumgebungen. Unterstützung bei verschiedenen Web- und Softwareentwicklungsaufgaben."
+    },
+    "exp3": {
+      "period": "2025/01 – 2025/05",
+      "role": "Webentwickler",
+      "company": "Exaline Kft., Budapest",
+      "details": "Entwicklung einer maßgeschneiderten SEO-Audit-Webanwendung. Entwicklung eines Python-Webscrapers und der Django-Backend-Logik. Design und Implementierung eines interaktiven React-Frontends."
+    },
+    "edu1": {
+      "period": "2023/09 – 2026/06",
+      "degree": "BSc in Informatik",
+      "institution": "Universität Pécs (PTE-TTK), Pécs",
+      "details": "Spezialisierung Software Engineering. Abschlussarbeit: Die Hausdorff-Metrik und Fraktale."
+    },
+    "edu2": {
+      "period": "2022",
+      "degree": "Führerschein Klasse B",
+      "institution": "Nagykanizsa",
+      "details": "Erfolgreicher Erwerb des Führerscheins."
+    },
+    "edu3": {
+      "period": "2018 – 2022",
+      "degree": "Abitur",
+      "institution": "Dr. Mező Ferenc Gymnasium, Nagykanizsa",
+      "details": "Mit absoluter Auszeichnung (nur Bestnoten) abgeschlossen."
+    },
+    "edu4": {
+      "period": "2020",
+      "degree": "C1 Fortgeschrittene Englischprüfung",
+      "institution": "Sprachzertifizierungszentrum",
+      "details": "Nachweis fortgeschrittener Englischkenntnisse."
+    }
+  },
+  "projects": {
+    "title": "Projekte & Links",
+    "highlighted": "Hervorgehobenes Projekt",
+    "liveUrl": "Live-URL",
+    "viewLink": "Link ansehen",
+    "viewRepo": "Repository ansehen",
+    "kitsu": {
+      "title": "KitsuKana",
+      "subtitle": "Full-Stack-Webanwendung zum Japanischlernen",
+      "desc": "End-to-End-Produktentwicklung unter Einsatz eines KI-gestützten Engineering-Workflows. Von Grund auf entwickelt, um ein modernes, nahtloses und hochgradig interaktives Lernerlebnis zu bieten.",
+      "c1_title": "Core Stack & UI",
+      "c1_desc": "Entwicklung einer hochperformanten Anwendung mit Next.js (App Router) und React 18, gestützt durch strikte TypeScript-Typisierung für robuste Entwicklung. Design und Implementierung eines eigenen, auf CSS-Variablen basierenden Designsystems (Glassmorphismus-Ästhetik) von Grund auf ohne schwere UI-Bibliotheken.",
+      "c2_title": "Daten & Authentifizierung",
+      "c2_desc": "Integration von Supabase (PostgreSQL BaaS) für stufenlos skalierbares Datenmanagement und Clerk für sichere, moderne Benutzerauthentifizierung.",
+      "c3_title": "Infrastruktur",
+      "c3_desc": "Bereitstellung über Vercel CI/CD-Pipelines für Zero-Downtime-Updates sowie Integration von PostHog für eine DSGVO-konforme, ereignisbasierte Produkttelemetrie.",
+      "c4_title": "Integrationen",
+      "c4_desc": "Aufbau automatisierter Issue-Tracking-Pipelines mithilfe der GitHub REST-API sowie nahtlose Abwicklung flexibler Monetarisierungsstrategien über Stripe und Ko-fi."
+    },
+    "other": {
+      "p1_title": "Meine Webseite",
+      "p1_desc": "Genau das Portfolio, in dem Sie gerade blättern. Eine moderne, hochgradig reaktionsfähige persönliche Webseite, erstellt mit React und Tailwind CSS, mit einer eleganten, individuellen Benutzeroberfläche zur Präsentation meiner beruflichen Laufbahn.",
+      "p2_title": "DriveSim",
+      "p2_desc": "Ein von slowroads.io inspiriertes Zen-Fahrerlebnis, jedoch mit einem einzigartigen Dreh: Anstatt auf prozedural generierten endlosen Straßen fahren Sie auf akribisch kartierten realen Strecken und reisen von Stadt A nach Stadt B innerhalb Ungarns.",
+      "p3_title": "Weltmeisterschafts-Prognose-App",
+      "p3_desc": "Ein fortschrittliches analytisches Werkzeug, das strenge mathematische Modelle anwendet, um basierend auf statistischen Daten den wahrscheinlichsten Gewinner der FIFA-Weltmeisterschaft 2026 zu simulieren und zu berechnen.",
+      "p4_title": "StreamEast",
+      "p4_desc": "Eine maßgeschneiderte Android IPTV-Anwendung mit einer erstklassigen, Netflix-ähnlichen Benutzeroberfläche, die speziell für das nahtlose Streamen frei empfangbarer japanischer und koreanischer Fernsehsender entwickelt wurde.",
+      "p5_title": "AdventOfCode",
+      "p5_desc": "Mein persönliches Herausforderungs-Repository mit algorithmischen Problemlösungen für Advent of Code, implementiert in fünf verschiedenen Programmiersprachen: C, C++, C#, Java und Python."
+    }
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "focus": "Fokus",
+    "connect": "Verbinden",
+    "role": "Software-Ingenieur",
+    "cities": "Nagykanizsa • Pécs",
+    "quote": "\"Einfachheit ist die Voraussetzung für Zuverlässigkeit.\"",
+    "author": "— Edsger W. Dijkstra",
+    "rights": "© 2026 Varga Péter. Alle Rechte vorbehalten.",
+    "focus1": "Full-Stack-Webentwicklung",
+    "focus2": "Interaktive Lernsoftware",
+    "focus3": "Algorithmen & Automatisierung"
+  }
+}

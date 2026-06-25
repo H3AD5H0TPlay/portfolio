@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <footer id="contact" className="bg-[#111] text-white pt-32 pb-12">
@@ -7,7 +10,7 @@ export default function Footer() {
         
         {/* Top Contact Email */}
         <div className="text-center mb-24">
-          <p className="text-sm tracking-[0.3em] text-gray-500 uppercase mb-6 font-semibold">Contact</p>
+          <p className="text-sm tracking-[0.3em] text-gray-500 uppercase mb-6 font-semibold">{t('footer.contact')}</p>
           <a href="mailto:vargapeter.workmail@gmail.com" className="text-3xl md:text-5xl lg:text-6xl font-serif italic hover:text-indigo-400 transition-colors duration-300">
             vargapeter.workmail@gmail.com
           </a>
@@ -23,31 +26,31 @@ export default function Footer() {
           <div className="flex flex-col space-y-10">
             <div>
               <h2 className="text-4xl font-serif text-white mb-3">Varga Péter</h2>
-              <p className="text-gray-400 text-sm mb-2 font-medium">Software Engineer</p>
-              <p className="text-gray-600 text-xs tracking-widest uppercase font-bold">Nagykanizsa &bull; Pécs</p>
+              <p className="text-gray-400 text-sm mb-2 font-medium">{t('footer.role')}</p>
+              <p className="text-gray-600 text-xs tracking-widest uppercase font-bold">{t('footer.cities').replace(' • ', ' • ')}</p>
             </div>
             
             <div className="max-w-sm">
               <p className="text-gray-400 italic text-sm leading-relaxed mb-4">
-                "Simplicity is prerequisite for reliability."
+                {t('footer.quote')}
               </p>
-              <p className="text-gray-600 text-xs uppercase tracking-widest font-bold">&mdash; Edsger W. Dijkstra</p>
+              <p className="text-gray-600 text-xs uppercase tracking-widest font-bold">{t('footer.author')}</p>
             </div>
           </div>
 
           {/* Middle Column: Focus */}
           <div>
-            <h3 className="text-xs font-bold text-gray-500 tracking-[0.2em] uppercase mb-8">Focus</h3>
+            <h3 className="text-xs font-bold text-gray-500 tracking-[0.2em] uppercase mb-8">{t('footer.focus')}</h3>
             <ul className="space-y-5 text-gray-300 text-sm font-medium">
-              <li>Full-Stack Web Development</li>
-              <li>Interactive Learning Software</li>
-              <li>Algorithms & Automation</li>
+              <li>{t('footer.focus1')}</li>
+              <li>{t('footer.focus2')}</li>
+              <li>{t('footer.focus3')}</li>
             </ul>
           </div>
 
           {/* Right Column: Connect */}
           <div>
-            <h3 className="text-xs font-bold text-gray-500 tracking-[0.2em] uppercase mb-8">Connect</h3>
+            <h3 className="text-xs font-bold text-gray-500 tracking-[0.2em] uppercase mb-8">{t('footer.connect')}</h3>
             <ul className="space-y-5 text-gray-300 text-sm font-medium">
               <li>
                 <a href="https://www.linkedin.com/in/varpeter/" target="_blank" rel="noreferrer" className="hover:text-indigo-400 transition-colors">
@@ -71,8 +74,8 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 border-t border-white/10 pt-8 font-medium">
-          <p>&copy; {currentYear} Varga Péter. All rights reserved.</p>
-          <p className="mt-4 md:mt-0 uppercase tracking-[0.1em]">Nagykanizsa &bull; Pécs</p>
+          <p>{t('footer.rights').replace('2026', currentYear.toString())}</p>
+          <p className="mt-4 md:mt-0 uppercase tracking-[0.1em]">{t('footer.cities').replace(' • ', ' • ')}</p>
         </div>
 
       </div>

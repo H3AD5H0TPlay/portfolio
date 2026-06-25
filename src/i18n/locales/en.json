@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "myStory": "My Story",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Software Engineer",
+    "quote": "Crafting robust digital foundations that stand the test of time.",
+    "description": "I am a versatile full-stack developer, crafting everything from responsive frontends to robust backend systems. Beyond standard web development, I am deeply passionate about building my own indie games, custom software solutions, and interactive language learning applications.",
+    "placeholder": "Image Placeholder"
+  },
+  "story": {
+    "title": "My Story",
+    "p1": "I was born and raised in the quiet, peaceful suburbs of Nagykanizsa. Growing up in such a calm environment instilled in me a deep appreciation for order and structure. I was the kind of kid who found comfort in rules—if there was a system in place, I followed it. Little did I know that this innate respect for logic and structured systems would translate beautifully into the world of programming, where code is the ultimate expression of order.",
+    "p2": "My journey into coding started in the 5th grade, driven by a simple video game problem. I needed to calculate permutations from 1 to 8, a mathematical concept I hadn't even learned yet. My cousin wrote a small Python script that instantly generated all the possibilities into a file. Seeing that process—typing a command and watching the machine effortlessly solve a complex problem—was a revelation. I realized the profound power of software: <1>you write it, and it becomes reality.</1> Python became my first language, and I've been in love with development ever since.",
+    "q1": "\"You write it, and it becomes reality.\"",
+    "p3": "I pursued my passion formally at the University of Pécs (PTE-TTK), graduating with a BSc in Computer Science, specializing in Software Engineering. My academic journey, culminating in my thesis on <1>\"The Hausdorff Metric and Fractals,\"</1> reinforced my deep respect for strict mathematical formulas and precision. In my work, I believe that every calculation must be flawless down to the last decimal.",
+    "p4": "Outside of formal academics, my coding is deeply intertwined with my hobbies. I am an avid gamer and a dedicated language learner. These passions are the primary fuel for my personal projects. I code to solve my own problems and entertain myself—whether it's building \"smart assistants\" to calculate game odds, optimal routes, and team compositions, or developing my own interactive language learning applications and zen games.",
+    "q2": "\"Maximize output through automation: the user provides the minimum, and the machine shoulders the rest.\"",
+    "p5": "My core engineering philosophy is simple: maximize output through automation. A user should provide the absolute minimum, and the machine should handle the heavy lifting. I build ethical, helpful tools that bring order to complexity, designed to make life easier for myself and others."
+  },
+  "resume": {
+    "title": "Resume",
+    "experience": "Experience",
+    "education": "Education",
+    "stack": "Tech Stack & Skills",
+    "toBeAdded": "To be added...",
+    "categories": {
+      "backend": "Backend & APIs",
+      "frontend": "Frontend & UI",
+      "data": "Data & Storage",
+      "mobile": "Mobile & Desktop",
+      "platform": "Platform & Delivery",
+      "additional": "Additional Tech",
+      "soft": "Soft Skills",
+      "spoken": "Spoken Languages"
+    },
+    "exp1": {
+      "period": "2026/03 – Present",
+      "role": "Volunteer",
+      "company": "Robotika Pécs Foundation, Pécs",
+      "details": "Maintenance of robotics hardware, wiring, and assembly of complex systems. Software configuration, testing, and troubleshooting of control scripts. Assisting at professional events and mentoring students."
+    },
+    "exp2": {
+      "period": "2026/03 – 2026/04",
+      "role": "IT Specialist",
+      "company": "Charter Informatika Kft., Pécs",
+      "details": "Hardware maintenance, network infrastructure deployment, and server/desktop configuration. Provided support for web and software development tasks."
+    },
+    "exp3": {
+      "period": "2025/01 – 2025/05",
+      "role": "Web Application Developer",
+      "company": "Exaline Kft., Budapest",
+      "details": "Developed a custom SEO auditing web app. Built a Python web scraper and Django backend logic. Designed and implemented an interactive React frontend."
+    },
+    "edu1": {
+      "period": "2023/09 – 2026/06",
+      "degree": "BSc in Computer Science",
+      "institution": "University of Pécs (PTE-TTK), Pécs",
+      "details": "Software Engineering Specialization. Thesis: The Hausdorff Metric and Fractals."
+    },
+    "edu2": {
+      "period": "2022",
+      "degree": "Category B Driving License",
+      "institution": "Nagykanizsa",
+      "details": "Successfully obtained my driving license."
+    },
+    "edu3": {
+      "period": "2018 – 2022",
+      "degree": "High School Diploma",
+      "institution": "Dr. Mező Ferenc Gimnázium, Nagykanizsa",
+      "details": "Graduated with absolute honors (straight A's)."
+    },
+    "edu4": {
+      "period": "2020",
+      "degree": "C1 Advanced English Exam",
+      "institution": "Language Certification",
+      "details": "Demonstrated advanced proficiency in the English language."
+    }
+  },
+  "projects": {
+    "title": "Projects & Links",
+    "highlighted": "Highlighted Project",
+    "liveUrl": "Live URL",
+    "viewLink": "View Link",
+    "viewRepo": "View Repository",
+    "kitsu": {
+      "title": "KitsuKana",
+      "subtitle": "Full-Stack Japanese Learning Web Application",
+      "desc": "End-to-end product development leveraging an AI-assisted engineering workflow. Designed from the ground up to provide a modern, seamless, and highly interactive learning experience.",
+      "c1_title": "Core Stack & UI",
+      "c1_desc": "Architected a highly performant application using Next.js (App Router) and React 18, enforced by strict TypeScript typing for robust development. Designed and implemented a custom, CSS variable-based design system (glassmorphism aesthetic) entirely from scratch, avoiding heavy UI libraries.",
+      "c2_title": "Data & Auth",
+      "c2_desc": "Integrated Supabase (PostgreSQL BaaS) for infinitely scalable data management and Clerk for secure, modern user authentication.",
+      "c3_title": "Infrastructure",
+      "c3_desc": "Deployed via Vercel CI/CD pipelines to guarantee zero-downtime updates, and integrated PostHog for GDPR-compliant, event-based product telemetry.",
+      "c4_title": "Integrations",
+      "c4_desc": "Built automated issue-tracking pipelines using the GitHub REST API and seamlessly handled flexible monetization strategies via Stripe and Ko-fi."
+    },
+    "other": {
+      "p1_title": "My Website",
+      "p1_desc": "The very portfolio you are browsing right now. A modern, highly responsive personal website built with React and Tailwind CSS, featuring a sleek, custom UI designed to showcase my professional journey.",
+      "p2_title": "DriveSim",
+      "p2_desc": "A zen driving experience inspired by slowroads.io, but with a unique twist: instead of procedurally generated endless roads, you drive on meticulously mapped real-world routes traveling from city A to city B within Hungary.",
+      "p3_title": "World Cup Prediction App",
+      "p3_desc": "An advanced analytical tool utilizing strict mathematical models to simulate and calculate the most probable winner of the 2026 FIFA World Cup based on statistical data.",
+      "p4_title": "StreamEast",
+      "p4_desc": "A custom Android IPTV application featuring a premium, Netflix-style user interface, designed specifically for seamlessly streaming free-to-air Japanese and Korean television channels.",
+      "p5_title": "AdventOfCode",
+      "p5_desc": "My personal challenge repository containing algorithmic problem-solving solutions for Advent of Code, implemented across five distinct programming languages: C, C++, C#, Java, and Python."
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "focus": "Focus",
+    "connect": "Connect",
+    "role": "Software Engineer",
+    "cities": "Nagykanizsa • Pécs",
+    "quote": "\"Simplicity is prerequisite for reliability.\"",
+    "author": "— Edsger W. Dijkstra",
+    "rights": "© 2026 Varga Péter. All rights reserved.",
+    "focus1": "Full-Stack Web Development",
+    "focus2": "Interactive Learning Software",
+    "focus3": "Algorithms & Automation"
+  }
+}

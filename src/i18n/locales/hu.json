@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "myStory": "Történetem",
+    "resume": "Önéletrajz",
+    "projects": "Projektek",
+    "contact": "Kapcsolat"
+  },
+  "hero": {
+    "role": "Szoftverfejlesztő Mérnök",
+    "quote": "Olyan robusztus digitális alapokat alkotok, amelyek kiállják az idő próbáját.",
+    "description": "Sokoldalú full-stack fejlesztő vagyok, aki az egyedi reszponzív felületektől a robusztus háttérrendszerekig mindent megépít. Az általános webfejlesztésen túl szenvedélyesen szeretek saját játékokat, egyedi szoftveres megoldásokat és interaktív nyelvtanuló alkalmazásokat fejleszteni.",
+    "placeholder": "Kép Helye"
+  },
+  "story": {
+    "title": "Történetem",
+    "p1": "Nagykanizsa csendes, békés kertvárosi részén születtem és nőttem fel. A nyugodt környezet már korán elültette bennem a rend és a struktúra iránti mély tiszteletet. Olyan gyerek voltam, aki biztonságot talált a szabályokban – ha volt egy szabályrendszer, azt mindig betartottam. Akkor még nem is sejtettem, hogy ez a logika és a strukturált rendszerek iránti veleszületett tiszteletem milyen gyönyörűen megmutatkozik majd a programozás világában, ahol a kód a rend végső kifejeződése.",
+    "p2": "A kódolás iránti utazásom még 5. osztályban kezdődött, egy egyszerű videójátékos probléma kapcsán. Ki kellett számolnom az 1-től 8-ig terjedő permutációkat, egy olyan matematikai fogalmat, amit akkoriban még nem is tanultam. Az unokatestvérem írt egy kis Python scriptet, ami egy szempillantás alatt legenerálta az összes lehetőséget egy fájlba. Látni azt a folyamatot – beírsz egy parancsot, és a gép erőfeszítés nélkül megold egy összetett problémát – igazi megvilágosodás volt. Ekkor döbbentem rá a szoftverek elképesztő hatalmára: <1>leírod, és valósággá válik.</1> A Python lett az első programozási nyelvem, és azóta is szerelmes vagyok a fejlesztésbe.",
+    "q1": "\"Leírod, és valósággá válik.\"",
+    "p3": "Szenvedélyemet a Pécsi Tudományegyetemen (PTE-TTK) folytattam, ahol Programtervező informatikus (BSc) szakon végeztem, Szoftverfejlesztés specializáción. Egyetemi éveim, melyeket a <1>\"Hausdorff-metrika és fraktálok\"</1> című szakdolgozatom koronázott meg, tovább mélyítették a szigorú matematikai képletek és a precizitás iránti tiszteletemet. A munkám során hiszem, hogy minden számításnak hibátlannak kell lennie, az utolsó tizedesjegyig.",
+    "p4": "A hivatalos tanulmányaimon túl a kódolás mélyen összefonódik a hobbijaimmal is. Imádok játszani és nyelveket tanulni, és pontosan ezek a szenvedélyek fűtik a személyes projektjeimet. Azért kódolok, hogy megoldjam a saját problémáimat és szórakoztassam magam – legyen szó \"okos asszisztensek\" írásáról, melyek kiszámolják a játékok esélyeit, a legjobb útvonalakat és csapatokat, vagy éppen saját interaktív nyelvtanuló appok és zen játékok fejlesztéséről.",
+    "q2": "\"Maximalizáld a teljesítményt automatizálással: a felhasználó adja a minimumot, a gép pedig elvégzi a munka nehezét.\"",
+    "p5": "A legfőbb mérnöki filozófiám egyszerű: maximalizálni a teljesítményt az automatizáláson keresztül. A felhasználónak az abszolút minimumot kelljen beletennie, és a gépnek kell elvinnie a vállán az összes terhet. Olyan etikus és hasznos eszközöket építek, amik rendet teremtenek a káoszban, és úgy lettek tervezve, hogy megkönnyítsék mind az én, mind pedig mások életét."
+  },
+  "resume": {
+    "title": "Önéletrajz",
+    "experience": "Tapasztalat",
+    "education": "Tanulmányok",
+    "stack": "Technológiák & Készségek",
+    "toBeAdded": "Hamarosan...",
+    "categories": {
+      "backend": "Backend & API-k",
+      "frontend": "Frontend & UI",
+      "data": "Adatbázisok & Tárolás",
+      "mobile": "Mobil & Asztali Appok",
+      "platform": "Platform & CI/CD",
+      "additional": "Egyéb Technológiák",
+      "soft": "Személyes Készségek",
+      "spoken": "Beszélt Nyelvek"
+    },
+    "exp1": {
+      "period": "2026/03 – Jelenleg",
+      "role": "Önkéntes",
+      "company": "Robotika Pécs Alapítvány, Pécs",
+      "details": "Robotikai hardverek karbantartása, vezetékezés és komplex rendszerek összeszerelése. Vezérlő scriptek szoftveres konfigurálása, tesztelése és hibaelhárítása. Asszisztencia szakmai rendezvényeken és diákok mentorálása."
+    },
+    "exp2": {
+      "period": "2026/03 – 2026/04",
+      "role": "IT Specialista",
+      "company": "Charter Informatika Kft., Pécs",
+      "details": "Hardveres karbantartás, hálózati infrastruktúra telepítése, valamint szerverek és asztali számítógépek konfigurálása. Támogatás nyújtása webes és szoftverfejlesztési feladatokban."
+    },
+    "exp3": {
+      "period": "2025/01 – 2025/05",
+      "role": "Webes Alkalmazásfejlesztő",
+      "company": "Exaline Kft., Budapest",
+      "details": "Egyedi SEO auditáló webalkalmazás fejlesztése. Python weblaparoló és Django backend logika építése. Interaktív React frontend tervezése és implementálása."
+    },
+    "edu1": {
+      "period": "2023/09 – 2026/06",
+      "degree": "Programtervező Informatikus BSc",
+      "institution": "Pécsi Tudományegyetem (PTE-TTK), Pécs",
+      "details": "Szoftverfejlesztő specializáció. Szakdolgozat: A Hausdorff-metrika és fraktálok."
+    },
+    "edu2": {
+      "period": "2022",
+      "degree": "B Kategóriás Jogosítvány",
+      "institution": "Nagykanizsa",
+      "details": "Sikeresen megszereztem a gépjárművezetői engedélyt."
+    },
+    "edu3": {
+      "period": "2018 – 2022",
+      "degree": "Érettségi Bizonyítvány",
+      "institution": "Dr. Mező Ferenc Gimnázium, Nagykanizsa",
+      "details": "Kitűnő eredménnyel (minden tantárgyból jeles) érettségiztem."
+    },
+    "edu4": {
+      "period": "2020",
+      "degree": "C1 Felsőfokú Angol Nyelvvizsga",
+      "institution": "Nyelvvizsga Központ",
+      "details": "Felsőfokú, haladó szintű angol nyelvtudás megszerzése."
+    }
+  },
+  "projects": {
+    "title": "Projektek & Linkek",
+    "highlighted": "Kiemelt Projekt",
+    "liveUrl": "Élő Oldal",
+    "viewLink": "Megtekintés",
+    "viewRepo": "Kód Megtekintése",
+    "kitsu": {
+      "title": "KitsuKana",
+      "subtitle": "Full-Stack Japán Nyelvtanuló Webalkalmazás",
+      "desc": "Végponttól végpontig tartó termékfejlesztés, mesterséges intelligenciával támogatott mérnöki munkafolyamatokkal. Az alapoktól úgy lett megtervezve, hogy modern, zökkenőmentes és rendkívül interaktív tanulási élményt nyújtson.",
+      "c1_title": "Core Stack & UI",
+      "c1_desc": "Nagy teljesítményű architektúra Next.js (App Router) és React 18 használatával, szigorú TypeScript típusellenőrzéssel a robusztus fejlesztés érdekében. Egyedi, CSS-változókon alapuló design system (glassmorphism stílus) tervezése és implementálása a nulláról, nehéz UI könyvtárak mellőzésével.",
+      "c2_title": "Data & Auth",
+      "c2_desc": "Supabase (PostgreSQL BaaS) integráció a végtelenül skálázható adatkezeléshez, és Clerk a biztonságos, modern felhasználói azonosításhoz.",
+      "c3_title": "Infrastructure",
+      "c3_desc": "Vercel CI/CD pipeline-ok a leállás nélküli (zero-downtime) frissítések garantálására, valamint PostHog integráció a GDPR-kompatibilis, eseményalapú terméktelemetria érdekében.",
+      "c4_title": "Integrations",
+      "c4_desc": "Automatizált hibakövető folyamatok építése a GitHub REST API segítségével, és zökkenőmentes monetizációs stratégiák kezelése Stripe-on és Ko-fi-n keresztül."
+    },
+    "other": {
+      "p1_title": "Saját Weboldalam",
+      "p1_desc": "Az a portfólió, amit éppen most böngészel. Egy modern, magasan reszponzív személyes weboldal, ami React-tel és Tailwind CSS-sel készült, letisztult egyedi felhasználói felülettel a szakmai utam bemutatására.",
+      "p2_title": "DriveSim",
+      "p2_desc": "Egy slowroads.io által inspirált zen vezetési élmény, de egyedi csavarral: ahelyett, hogy procedurálisan generált végtelen utakon mennél, aprólékosan feltérképezett valós útvonalakon vezethetsz, Magyarországon belül eljutva A városból B városba.",
+      "p3_title": "Világbajnokság Predikciós App",
+      "p3_desc": "Egy fejlett analitikai eszköz, mely szigorú matematikai modelleket alkalmazva szimulálja és statisztikai adatok alapján kiszámítja a 2026-os labdarúgó-világbajnokság legvalószínűbb győztesét.",
+      "p4_title": "StreamEast",
+      "p4_desc": "Egy egyedi Android IPTV alkalmazás, mely prémium Netflix-stílusú felhasználói felülettel rendelkezik, kifejezetten az ingyenesen fogható japán és koreai TV-csatornák zökkenőmentes streamelésére tervezve.",
+      "p5_title": "AdventOfCode",
+      "p5_desc": "A saját személyes kihívás-táram, amely az Advent of Code algoritmikus feladatainak megoldásait tartalmazza, öt különböző programozási nyelven: C, C++, C#, Java és Python."
+    }
+  },
+  "footer": {
+    "contact": "Kapcsolat",
+    "focus": "Fókuszterület",
+    "connect": "Elérhetőség",
+    "role": "Szoftverfejlesztő Mérnök",
+    "cities": "Nagykanizsa • Pécs",
+    "quote": "\"Az egyszerűség a megbízhatóság előfeltétele.\"",
+    "author": "— Edsger W. Dijkstra",
+    "rights": "© 2026 Varga Péter. Minden jog fenntartva.",
+    "focus1": "Full-Stack Webfejlesztés",
+    "focus2": "Interaktív Tanulószoftverek",
+    "focus3": "Algoritmusok és Automatizáció"
+  }
+}
