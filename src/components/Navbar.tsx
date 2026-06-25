@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 const languages = ['EN', 'HU', 'DE', 'JP', 'KR'];
 
@@ -16,6 +16,7 @@ export default function Navbar() {
     { id: 'my-story', label: t('nav.myStory') },
     { id: 'resume', label: t('nav.resume') },
     { id: 'projects', label: t('nav.projects') },
+    { id: 'cv', label: 'CV', isRoute: true },
     { id: 'contact', label: t('nav.contact') }
   ];
 
@@ -57,13 +58,23 @@ export default function Navbar() {
         {/* Center: Navigation Links */}
         <div className="hidden md:flex items-center space-x-1">
           {navItems.map((item) => (
-            <a 
-              key={item.id} 
-              href={`#${item.id}`} 
-              className="relative px-4 py-2 text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-300 rounded-full hover:bg-gray-100/50 dark:hover:bg-white/5"
-            >
-              {item.label}
-            </a>
+            item.isRoute ? (
+              <Link
+                key={item.id}
+                to={`/${activeLang.toLowerCase()}/${item.id}`}
+                className="relative px-4 py-2 text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-300 rounded-full hover:bg-gray-100/50 dark:hover:bg-white/5"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a 
+                key={item.id} 
+                href={`#${item.id}`} 
+                className="relative px-4 py-2 text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-300 rounded-full hover:bg-gray-100/50 dark:hover:bg-white/5"
+              >
+                {item.label}
+              </a>
+            )
           ))}
         </div>
 

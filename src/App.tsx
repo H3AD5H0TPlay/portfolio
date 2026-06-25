@@ -7,6 +7,7 @@ import MyStory from './components/MyStory';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import CVViewer from './components/CVViewer';
 
 function PortfolioLayout() {
   const { lang } = useParams();
@@ -41,6 +42,7 @@ function App() {
   return (
     <BrowserRouter basename="/portfolio">
       <Routes>
+        <Route path="/:lang/cv" element={<CVViewer />} />
         <Route path="/:lang" element={<PortfolioLayout />} />
         <Route path="/" element={<Navigate to="/en" replace />} />
         <Route path="*" element={<Navigate to="/en" replace />} />
