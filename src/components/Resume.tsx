@@ -160,7 +160,7 @@ export default function Resume() {
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Mobile & Desktop</h4>
               <div className="flex flex-wrap gap-2">
-                {['Android', 'Kotlin', 'Dart (Flutter)', 'Gradle', 'PC Apps'].map(skill => (
+                {['Android', 'Kotlin', 'Dart (Flutter)', 'Gradle', 'PC Apps', 'SDL2', 'Dear ImGui'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
                 ))}
               </div>
@@ -180,7 +180,7 @@ export default function Resume() {
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Additional Tech</h4>
               <div className="flex flex-wrap gap-2">
-                {['C++', 'NumPy, Pandas, SciPy', 'AI / LLM Engineering', 'Robotics Config'].map(skill => (
+                {['C/C++', 'NumPy, Pandas, SciPy', 'AI / LLM Engineering', 'Robotics Config'].map(skill => (
                   <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
                 ))}
               </div>
