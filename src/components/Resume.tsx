@@ -28,16 +28,22 @@ export default function Resume() {
 
   const experience = [
     {
-      period: "202X – Present",
-      role: "Full-Stack Developer",
-      company: "Freelance / Self-Employed",
-      details: "Developing responsive frontends and robust backend systems. Architecting scalable APIs and implementing strict security protocols."
+      period: "2026/03 – Present",
+      role: "Volunteer",
+      company: "Robotika Pécs Foundation, Pécs",
+      details: "Maintenance of robotics hardware, wiring, and assembly of complex systems. Software configuration, testing, and troubleshooting of control scripts. Assisting at professional events and mentoring students."
     },
     {
-      period: "202X – Present",
-      role: "Indie Software Creator",
-      company: "Personal Projects",
-      details: "Designing interactive language learning applications and developing custom scripts and smart assistants for video games."
+      period: "2026/03 – 2026/04",
+      role: "IT Specialist",
+      company: "Charter Informatika Kft., Pécs",
+      details: "Hardware maintenance, network infrastructure deployment, and server/desktop configuration. Provided support for web and software development tasks."
+    },
+    {
+      period: "2025/01 – 2025/05",
+      role: "Web Application Developer",
+      company: "Exaline Kft., Budapest",
+      details: "Developed a custom SEO auditing web app. Built a Python web scraper and Django backend logic. Designed and implemented an interactive React frontend."
     }
   ];
 
@@ -49,7 +55,7 @@ export default function Resume() {
         <div className="flex items-center space-x-4 mb-16">
           <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
-            Resume.
+            Resume
           </h2>
           <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
         </div>
