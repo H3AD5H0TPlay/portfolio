@@ -47,7 +47,7 @@ export default function Projects() {
             
             <div className="flex flex-col lg:flex-row gap-8 justify-between items-start lg:items-center mb-10">
               <div>
-                <span className="inline-block px-4 py-1.5 bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 text-xs font-black rounded-full uppercase tracking-wider mb-4">Highlighted Project • 1/2 • 2025 – Present</span>
+                <span className="inline-block px-4 py-1.5 bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 text-xs font-black rounded-full uppercase tracking-wider mb-4">Highlighted Project • 2025 – Present</span>
                 <h3 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-2 tracking-tight">KitsuKana</h3>
                 <p className="text-xl md:text-2xl font-bold text-gray-600 dark:text-gray-400">Full-Stack Japanese Learning Web Application</p>
               </div>
