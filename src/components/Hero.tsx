@@ -8,10 +8,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full blur-xl opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
         {/* Actual image container */}
         <div className="relative w-full h-full rounded-full border-4 border-white dark:border-[#1a1a1a] shadow-xl overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
-          {/* Placeholder text - replace with actual img tag when ready */}
-          <span className="text-gray-400 dark:text-gray-500 text-sm font-medium">Image<br/>Placeholder</span>
-          {/* Example of how the img tag should look: */}
-          {/* <img src="/profile.jpg" alt="Varga Péter" className="w-full h-full object-cover" /> */}
+          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="Varga Péter" className="w-full h-full object-cover" />
         </div>
       </div>
 
