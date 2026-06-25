@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import MyStory from './components/MyStory';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Resume />
         <Projects />
       </main>
+      
+      <Footer />
     </div>
   );
 }

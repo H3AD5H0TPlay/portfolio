@@ -7,7 +7,7 @@ export default function MyStory() {
         <div className="flex items-center space-x-4 mb-16">
           <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
-            My Story.
+            My Story
           </h2>
           <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
         </div>
