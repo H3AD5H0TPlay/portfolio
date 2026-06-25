@@ -28,11 +28,11 @@ export default function Navbar() {
         
         {/* Left: Logo / Name */}
         <a 
-          href="/" 
+          href="/portfolio/" 
           className="relative group text-2xl font-black tracking-tighter"
         >
           <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all duration-300 group-hover:opacity-80">
-            Peti.
+            Varga Péter
           </span>
           {/* Animated underline effect */}
           <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
