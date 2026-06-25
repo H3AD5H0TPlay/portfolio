@@ -129,49 +129,81 @@ export default function Resume() {
             {/* Backend & APIs */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Backend & APIs</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+              <div className="flex flex-wrap gap-2">
+                {['Node.js', 'Python (Django, Flask)', 'C#', 'Java', 'Clerk Auth'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
             </div>
 
             {/* Frontend & UI */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Frontend & UI</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+              <div className="flex flex-wrap gap-2">
+                {['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML & CSS', 'Bootstrap'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
             </div>
 
             {/* Data & Storage */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Data & Storage</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+              <div className="flex flex-wrap gap-2">
+                {['PostgreSQL', 'Supabase'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Mobile & Desktop Apps */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Mobile & Desktop</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Android', 'Kotlin', 'Dart (Flutter)', 'Gradle', 'PC Apps'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
             </div>
 
             {/* Platform & Delivery */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Platform & Delivery</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+              <div className="flex flex-wrap gap-2">
+                {['Linux (Debian, Arch)', 'Vercel (CI/CD)', 'PostHog', 'Networking Basics'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
             </div>
 
-            {/* Additional Languages */}
+            {/* Additional Tech */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Additional Languages</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
-            </div>
-
-            {/* Mobile */}
-            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
-              <h4 className="text-lg font-bold text-indigo-500 mb-4">Mobile</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Additional Tech</h4>
+              <div className="flex flex-wrap gap-2">
+                {['C++', 'NumPy, Pandas, SciPy', 'AI / LLM Engineering', 'Robotics Config'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
             </div>
 
             {/* Soft Skills */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Soft Skills</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+              <div className="flex flex-wrap gap-2">
+                {['Problem Solving', 'Analytical Thinking', 'Continuous Learning', 'Process Automation'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
             </div>
 
             {/* Spoken Languages */}
             <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
               <h4 className="text-lg font-bold text-indigo-500 mb-4">Spoken Languages</h4>
-              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+              <div className="flex flex-wrap gap-2">
+                {['Hungarian (Native)', 'English (C1 Advanced)'].map(skill => (
+                  <span key={skill} className="px-2.5 py-1 bg-gray-50 dark:bg-white/5 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-md border border-gray-200 dark:border-white/10">{skill}</span>
+                ))}
+              </div>
             </div>
             
           </div>
