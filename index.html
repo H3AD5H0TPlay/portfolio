@@ -5,8 +5,34 @@
     <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Varga Péter</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-cTVLlojG.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CRwMiDpD.css">
+    <!-- Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === 'p' && l.search[2] === '=') {
+          var a = document.createElement('a');
+          a.href = l.href;
+          var q = a.search.slice(1).split('&');
+          var p = '';
+          var qArray = [];
+          for (var i = 0; i < q.length; i++) {
+            if (q[i].slice(0, 2) === 'p=') {
+              p = q[i].slice(2).replace(/~and~/g, '&');
+            } else {
+              qArray.push(q[i].replace(/~and~/g, '&'));
+            }
+          }
+          if (p) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (p || '') +
+              (qArray.length > 0 ? '?' + qArray.join('&') : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location));
+    </script>
+    <script type="module" crossorigin src="/portfolio/assets/index-D7v0n86M.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DVdYSAm2.css">
   </head>
   <body>
     <div id="root"></div>
