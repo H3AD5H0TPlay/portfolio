@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[85vh] flex flex-col items-center justify-center text-center pt-10 pb-20">
+    <section id="home" className="min-h-[85vh] w-full px-6 flex flex-col items-center justify-center text-center pt-10 pb-20">
       
       {/* Profile Image Placeholder */}
       <div className="relative w-36 h-36 md:w-44 md:h-44 mb-8 group">

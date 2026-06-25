@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MyStory from './components/MyStory';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
       {/* Spacer for fixed navbar */}
       <div className="h-20"></div>
       
-      <main className="max-w-7xl mx-auto px-6">
+      <main className="w-full">
         <Hero />
         <MyStory />
+        <Resume />
       </main>
     </div>
   );
