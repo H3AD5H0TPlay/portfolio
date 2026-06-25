@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import MyStory from './components/MyStory';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       
       <main className="max-w-7xl mx-auto px-6">
         <Hero />
+        <MyStory />
       </main>
     </div>
   );
