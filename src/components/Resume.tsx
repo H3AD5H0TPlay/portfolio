@@ -7,10 +7,22 @@ export default function Resume() {
       details: "Software Engineering Specialization. Thesis: The Hausdorff Metric and Fractals."
     },
     {
-      period: "201X – 2023",
+      period: "2022",
+      degree: "Category B Driving License",
+      institution: "Nagykanizsa",
+      details: "Successfully obtained my driving license."
+    },
+    {
+      period: "2018 – 2022",
       degree: "High School Diploma",
-      institution: "Árpád-házi Szent Erzsébet Gimnázium, Esztergom",
-      details: "Balanced a rigorous academic schedule with competitive fencing and classical music (clarinet)."
+      institution: "Dr. Mező Ferenc Gimnázium, Nagykanizsa",
+      details: "Graduated with absolute honors (straight A's)."
+    },
+    {
+      period: "2020",
+      degree: "C1 Advanced English Exam",
+      institution: "Language Certification",
+      details: "Demonstrated advanced proficiency in the English language."
     }
   ];
 
