@@ -113,6 +113,70 @@ export default function Resume() {
           </div>
 
         </div>
+
+        {/* Stack Section */}
+        <div className="mt-32">
+          <div className="flex items-center space-x-4 mb-16">
+            <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
+              Tech Stack & Skills
+            </h3>
+            <div className="h-px bg-gray-300 dark:bg-white/10 flex-1"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            {/* Backend & APIs */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Backend & APIs</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+
+            {/* Frontend & UI */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Frontend & UI</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+
+            {/* Data & Storage */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Data & Storage</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+
+            {/* Platform & Delivery */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Platform & Delivery</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+
+            {/* Additional Languages */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Additional Languages</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+
+            {/* Mobile */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Mobile</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+
+            {/* Soft Skills */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Soft Skills</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+
+            {/* Spoken Languages */}
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 hover:border-indigo-500/30 transition-colors">
+              <h4 className="text-lg font-bold text-indigo-500 mb-4">Spoken Languages</h4>
+              <div className="text-sm text-gray-500 dark:text-gray-400 italic">To be added...</div>
+            </div>
+            
+          </div>
+        </div>
+
       </div>
     </section>
   );
